@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-
 def print_matrix_integer(matrix=[[]]):
-    """Print a matrix of integers."""
     if not matrix:
         return None 
     for submatrix in matrix:
@@ -9,4 +7,4 @@ def print_matrix_integer(matrix=[[]]):
             print()
         for i in range(len(submatrix)):
             print("{:d}".format(submatrix[i]),
-                  end="\n" if i is len(submatrix) - 1 else " ")   
+                     end="\n" if i is len(submatrix) - 1 else " ")
